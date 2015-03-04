@@ -24,6 +24,7 @@ def parse_contig_names(contig_file):
 					sys.exit('[ERROR] Repeated contig name ' + contig_name + ' in ' + contig_file)
 				else:
 					contigs.add(contig_name)
+	print "# " + str(len(contigs)) + " contigs"
 	return contigs
 
 def parse_gff_and_print(gff_file, contigs, annotation_type):
