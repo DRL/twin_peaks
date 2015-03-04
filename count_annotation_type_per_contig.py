@@ -27,7 +27,7 @@ def parse_contig_names(contig_file):
 	return contigs
 
 def parse_gff_and_print(gff_file, contigs, annotation_type):
-	with open(contig_file) as fh:
+	with open(gff_file) as fh:
 		for line in fh:
 			if not line.startswith("#"):
 				field = line.split("\t")
