@@ -34,7 +34,7 @@ def parse_gff_and_print(gff_file, contigs, annotation_type):
 				field = line.split("\t")
 				if field[2] == annotation_type:
 					if field[0] in contigs:
-						print line
+						print line.rstrip("\n")
 
 
 if __name__ == "__main__":
