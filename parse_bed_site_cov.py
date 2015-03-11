@@ -57,6 +57,7 @@ def parseCovSitesFromInfile(infile, max_count):
 		for line in fh:
 			name, cov, sites, length, proportion = line.rstrip("\n").split("\t")
 			cov = int(cov)
+			sites = int(sites)
 			if cov <= max_count:
 				counts[cov] = counts.get(cov, 0) + sites
 			else:
