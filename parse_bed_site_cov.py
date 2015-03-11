@@ -81,7 +81,7 @@ if __name__ == "__main__":
 	header = "# cov"
 	for dataset in dict_of_genomecovs:
 		header += "\t" + dataset
-		covered_sites[datasets] = parseCovSitesFromInfile(dict_of_genomecovs[dataset], max_count)
+		covered_sites[dataset] = parseCovSitesFromInfile(dict_of_genomecovs[dataset], max_count)
 
 	print header
 	for i in range(0, max_count):		
