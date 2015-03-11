@@ -88,4 +88,4 @@ if __name__ == "__main__":
 		print str(i),
 		for dataset in covered_sites:
 			print "\t" + str(covered_sites[dataset][i]),
-			print
+		print
