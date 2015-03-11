@@ -45,8 +45,7 @@ def getGenomeCovFiles(genomecov_dir):
 	print "[STATUS] - Getting GenomeCovFiles ... "
 	for genomecov_file in os.listdir(genomecov_dir):
 		if genomecov_file.endswith("cov.hist.txt"):
-			dataset = genomecov_file.split(".")[-4]
-			print dataset
+			dataset = genomecov_file.split(".")[0]
 			dict_of_genomecovs[dataset] = genomecov_dir + genomecov_file
 	print "[STATUS] - %s GenomeCovFiles found." %len(dict_of_genomecovs)
 	return dict_of_genomecovs
